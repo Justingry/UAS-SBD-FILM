@@ -25,5 +25,8 @@
                 <?php endif; ?>
             </div>
         </nav>
+        <footer>
+            &copy; 2026 Proyek UAS Sistem Basis Data
+        </footer>
     </body>
 </html>
