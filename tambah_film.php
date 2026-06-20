@@ -162,48 +162,24 @@ $kualitas = $pdo->query("SELECT id_kualitas, resolusi FROM kualitas_video ORDER 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Film Baru</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; font-weight: 600; margin-bottom: 5px; color: #2c3e50; }
-        .form-group input, .form-group select { width: 100%; padding: 10px 12px; border: 1px solid #dce1e8; border-radius: 4px; font-size: 14px; box-sizing: border-box; }
-        .form-group select[multiple] { height: 100px; }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .form-actions { display: flex; gap: 10px; margin-top: 20px; }
-        .btn-primary { background-color: #3498db; color: white; padding: 10px 24px; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; }
-        .btn-primary:hover { background-color: #2980b9; }
-        .btn-secondary { background-color: #95a5a6; color: white; padding: 10px 24px; border: none; border-radius: 4px; font-weight: 600; text-decoration: none; display: inline-block; text-align: center; }
-        .btn-secondary:hover { background-color: #7f8c8d; }
-        .alert { padding: 12px 20px; border-radius: 4px; margin-bottom: 20px; }
-        .alert-danger { background-color: #fdecea; border: 1px solid #f5c6cb; color: #721c24; }
-        .alert-success { background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
-        .required { color: #e74c3c; }
-        .kategori-group { display: flex; gap: 10px; align-items: center; }
-        .kategori-group select { flex: 2; }
-        .kategori-group input { flex: 1; }
-        .kategori-group button { flex: 0 0 auto; padding: 10px 16px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        .kategori-group button:hover { background-color: #27ae60; }
-        .btn-sm { font-size: 13px; }
-    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-brand">
             <span>🎬</span> Bioskop Film Digital
         </div>
-        <div class="navbar-right">
-            <ul class="navbar-nav">
-                <li><a href="kategori.php">Kategori Film</a></li>
-                <li><a href="film.php" class="active">Data Film</a></li>
-                <li><a href="transaksi.php">Transaksi</a></li>
-            </ul>
-            <div class="navbar-user">
-                <?php if (isset($_SESSION['nama'])): ?>
-                    <span class="user-greeting">Halo, <?= htmlspecialchars(explode(' ', $_SESSION['nama'])[0]); ?></span>
-                    <a href="logout.php" class="btn-logout">Logout</a>
-                <?php else: ?>
-                    <a href="login.php" class="btn-login">Login</a>
-                <?php endif; ?>
-            </div>
+        <ul class="navbar-nav">
+            <li><a href="kategori.php">Kategori Film</a></li>
+            <li><a href="film.php">Data Film</a></li>
+            <li><a href="transaksi.php">Transaksi</a></li>
+        </ul>
+        <div class="navbar-user">
+            <?php if (isset($_SESSION['nama'])): ?>
+                <span class="user-greeting">Halo, <?= htmlspecialchars(explode(' ', $_SESSION['nama'])[0]); ?></span>
+                <a href="logout.php" class="btn-logout">Logout</a>
+            <?php else: ?>
+                <a href="login.php" class="btn-login">Login</a>
+            <?php endif; ?>
         </div>
     </nav>
 
