@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tambah Film Baru</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <nav class="navbar">
             <div class="navbar-brand">
@@ -25,8 +26,10 @@
                 <?php endif; ?>
             </div>
         </nav>
-        <footer>
-            &copy; 2026 Proyek UAS Sistem Basis Data
-        </footer>
     </body>
+
+    <footer>
+        &copy; 2026 Proyek UAS Sistem Basis Data
+    </footer>
+
 </html>
