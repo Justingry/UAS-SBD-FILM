@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'b-koneksi.php';
+$pdo = require 'b-koneksi.php';
 
 header('Content-Type: application/json');
 
@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nama'])) {
     }
 
     try {
-        // Cek duplikat
         $stmt = $pdo->prepare("SELECT id_kategori FROM kategori WHERE nama_kategori = ?");
         $stmt->execute([$nama]);
         if ($stmt->fetch()) {
