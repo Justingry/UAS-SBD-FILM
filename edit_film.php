@@ -24,10 +24,10 @@ if (!$film) {
     exit;
 }
 
-// Ambil flash message dari session
 $flash = $_SESSION['flash'] ?? null;
 unset($_SESSION['flash']);
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -41,17 +41,12 @@ unset($_SESSION['flash']);
         <div class="navbar-brand">
             <span>🎬</span> Bioskop Film Digital
         </div>
-        <ul class="navbar-nav">
-            <li><a href="film.php">Data Film</a></li>
-            <li><a href="edit_film.php?id=<?= $id ?>" class="active">Edit Film</a></li>
-        </ul>
     </nav>
 
     <div class="container">
         <div class="card" style="max-width: 600px; margin: 40px auto;">
             <div class="card-header">
                 <h1 class="card-title">Edit Film</h1>
-                <a href="film.php" class="btn btn-kembali">← Kembali</a>
             </div>
 
             <?php if ($flash): ?>
@@ -85,7 +80,7 @@ unset($_SESSION['flash']);
 
                 <div class="form-actions">
                     <button type="submit" class="btn btn-edit" style="padding: 12px 30px;">Simpan Perubahan</button>
-                    <a href="film.php" class="btn btn-kembali">Batal</a>
+                    <a href="index.php" class="btn btn-kembali">Batal</a>
                 </div>
             </form>
         </div>
