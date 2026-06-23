@@ -80,7 +80,7 @@ unset($_SESSION['flash']);
 
                 <div class="form-actions">
                     <button type="submit" class="btn btn-edit" style="padding: 12px 30px;">Simpan Perubahan</button>
-                    <a href="index.php" class="btn btn-kembali">Batal</a>
+                    <a href="index.php" class="btn btn-kembali">Kembali</a>
                 </div>
             </form>
         </div>

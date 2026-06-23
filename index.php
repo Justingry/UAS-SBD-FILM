@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+$flash = $_SESSION['flash'] ?? null;
+unset($_SESSION['flash']);
+
 $conn = require "koneksi.php";
 
 $query = "
@@ -9,11 +13,7 @@ $query = "
     ORDER BY film.id_film
 ";
 $result = mysqli_query($conn, $query);
-
-$daftar_film = [];
-if ($result) {
-    $daftar_film = mysqli_fetch_all($result, MYSQLI_ASSOC);
-}
+$daftar_film = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
 

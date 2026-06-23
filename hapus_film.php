@@ -1,9 +1,10 @@
 <?php
-// hapus_film.php
-$conn = require "koneksi.php";
+session_start();
+require "koneksi.php";
 
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-    header("Location: film.php?error=ID tidak valid");
+    $_SESSION['flash'] = ['type' => 'error', 'message' => 'ID tidak valid'];
+    header("Location: index.php");
     exit;
 }
 
@@ -36,8 +37,10 @@ $result = mysqli_query($conn, $sql);
 mysqli_query($conn, "SET FOREIGN_KEY_CHECKS = 1");
 
 if ($result && mysqli_affected_rows($conn) > 0) {
-    header("Location: film.php?sukses=Data film berhasil dihapus");
+    $_SESSION['flash'] = ['type' => 'success', 'message' => '✅ Data film berhasil dihapus'];
 } else {
-    header("Location: film.php?error=Gagal menghapus film");
+    $_SESSION['flash'] = ['type' => 'error', 'message' => '❌ Gagal menghapus film'];
 }
+
+header("Location: index.php");
 exit;
