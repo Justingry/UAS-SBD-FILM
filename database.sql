@@ -351,116 +351,16 @@ INSERT INTO pustaka_film (id_pengguna, id_film, tanggal_perolehan) VALUES
 
 -- 18. Ulasan (100 Data)
 INSERT INTO ulasan (id_pengguna, id_film, rating_skor, komentar) VALUES
-
-(1, 1, 5, 'Alur ceritanya mind-blowing banget!'), -- FILM 1: Inception (id_film = 1)
-(2, 1, 4, 'Visualnya luar biasa, tapi plotnya cukup rumit untuk ditonton sekali.'),
-(5, 1, 5, 'Karya masterpiece dari Nolan! Musik latar dan aktingnya sempurna.'),
-(3, 1, 5, 'Konsep mimpi dalam mimpi yang sangat jenius.'),
-(4, 1, 4, 'Butuh fokus tinggi nontonnya, tapi sangat memuaskan di akhir.'),
-(6, 1, 4, 'Akting Leonardo DiCaprio sangat mendalam di sini.'),
-(7, 1, 5, 'Efek visual kota yang melipat itu bener-bener ikonik.'),
-(8, 1, 3, 'Bagus sih, cuma bikin pusing kalau nonton pas lagi capek.'),
-(9, 1, 4, 'Ending-nya menggantung dan bikin debat sama temen.'),
-(10, 1, 5, 'Salah satu film fiksi ilmiah terbaik sepanjang masa.'),
-
-(1, 2, 5, 'Joker versi Heath Ledger tidak ada tandingannya. Sangat ikonik!'), -- FILM 2: The Dark Knight (id_film = 2)
-(3, 2, 5, 'Film pahlawan super terbaik yang pernah dibuat. Realistis dan kelam.'),
-(6, 2, 4, 'Bagus banget, durasinya lumayan panjang tapi tidak terasa membosankan.'),
-(2, 2, 5, 'Sutradara Nolan bener-bener bikin standar film superhero jadi tinggi.'),
-(4, 2, 5, 'Pengembangan karakter Harvey Dent menjadi Two-Face sangat rapi.'),
-(5, 2, 4, 'Ketegangan terjaga dari awal sampai akhir film.'),
-(7, 2, 5, 'Setiap dialog Joker sangat bermakna dan filosofis.'),
-(8, 2, 4, 'Sisi detektif Batman di film ini sangat ditonjolkan.'),
-(9, 2, 5, 'Skoring musik dari Hans Zimmer membuat atmosfer Gotham begitu hidup.'),
-(10, 2, 4, 'Film yang wajib ditonton minimal sekali seumur hidup.'),
-
-(3, 3, 4, 'Kritik sosial yang sangat tajam dan jenius.'), -- FILM 3: Parasite (id_film = 3)
-(4, 3, 5, 'Layak menang Oscar. Komedi hitam yang berubah jadi ketegangan murni.'),
-(8, 3, 3, 'Bagus, tapi endingnya membuat saya agak sedikit tidak nyaman.'),
-(1, 3, 5, 'Sengkarut konflik kelas sosial yang dikemas dengan sangat satir.'),
-(2, 3, 4, 'Sinematografi dan simbolisme di film ini luar biasa detail.'),
-(5, 3, 4, 'Awalnya ketawa-tawa, pertengahan ke akhir bikin jantungan.'),
-(6, 3, 5, 'Pacing cerita sangat pas, tidak ada adegan yang mubazir.'),
-(7, 3, 4, 'Akting seluruh keluarga miskinnya sangat natural dan dapet banget.'),
-(9, 3, 5, 'Plot twist di ruang bawah tanah itu bener-bener tidak terduga.'),
-(10, 3, 4, 'Film Korea Selatan yang sukses mendobrak pasar global.'),
-
-(1, 4, 5, 'Animasinya sangat indah dan penuh makna mendalam tentang kehidupan.'), -- FILM 4: Spirited Away (id_film = 4)
-(7, 4, 4, 'Sangat seru ditonton bersama keluarga, dunianya sangat ajaib.'),
-(9, 4, 5, 'Ghibli tidak pernah gagal membawa imajinasi penonton terbang tinggi.'),
-(2, 4, 5, 'Dunia magis yang diciptakan Hayao Miyazaki sangat detail dan indah.'),
-(3, 4, 4, 'Karakter No-Face sangat ikonik dan penuh dengan metafora.'),
-(4, 4, 5, 'Musik latarnya sangat menenangkan dan bikin nostalgia.'),
-(5, 4, 4, 'Petualangan Chihiro yang sangat menyentuh hati penonton.'),
-(6, 4, 4, 'Visual klasik gambar tangan yang tak lekang oleh waktu.'),
-(8, 4, 5, 'Menang Oscar emang gak bohong, ini film animasi terbaik.'),
-(10, 4, 4, 'Pesan moral tentang keserakahan manusia disampaikan dengan halus.'),
-
-(7, 5, 4, 'Serem banget set film dan skoring suaranya.'), -- FILM 5: Pengabdi Setan (id_film = 5)
-(2, 5, 5, 'Horor Indonesia terbaik di dekade ini! Teror Ibu sangat membekas.'),
-(6, 5, 3, 'Seram di paruh pertama, tapi menjelang akhir tensinya agak menurun.'),
-(1, 5, 4, 'Suara lonceng Ibu bener-bener bikin merinding sampai kebawa mimpi.'),
-(3, 5, 4, 'Joko Anwar berhasil membangun atmosfer rumah tua yang sangat mencekam.'),
-(4, 5, 4, 'Akting Tara Basro sangat solid sebagai anak sulung.'),
-(5, 5, 5, 'Jump scare di film ini tidak murahan, eksekusinya cerdas.'),
-(8, 5, 3, 'Bagus, tapi saya lebih suka versi originalnya tahun 1980.'),
-(9, 5, 4, 'Sinematografinya juara untuk ukuran film horor lokal.'),
-(10, 5, 4, 'Berhasil menaikkan standar film horor di Indonesia.'),
-
-(3, 6, 5, 'Sains dan emosinya seimbang. Bagian perpisahan ayah dan anak bikin nangis.'), -- FILM 6: Interstellar (id_film = 6)
-(10, 6, 4, 'Secara visual bintang lima, tapi penjelasan fisikanya agak berat.'),
-(1, 6, 5, 'Teori relativitas waktu dikemas jadi cerita keluarga yang mengharukan.'),
-(2, 6, 5, 'Adegan di planet air dengan ombak raksasa itu sangat menegangkan.'),
-(4, 6, 4, 'Visual lubang hitam (Gargantua) yang sangat akurat secara ilmiah.'),
-(5, 6, 5, 'Nonton ini bikin kita merasa betapa kecilnya manusia di alam semesta.'),
-(6, 6, 4, 'Robot TARS memberikan sedikit humor segar di tengah situasi tegang.'),
-(7, 6, 5, 'Soundtrack organ dari Hans Zimmer bener-bener bikin merinding.'),
-(8, 6, 4, 'Ceritanya kompleks tapi emosinya nembus langsung ke penonton.'),
-(9, 6, 4, 'Endingnya fiksi banget, tapi secara keseluruhan ini film hebat.'),
-
-(4, 7, 5, 'I love you 3000! Epik banget tamatnya.'),-- FILM 7: Avengers: Endgame (id_film = 7)
-(5, 7, 5, 'Penutup fase Marvel yang luar biasa emosional bagi para penggemar lama.'),
-(9, 7, 4, 'Pertempuran akhirnya sangat megah, walaupun ada beberapa plot hole kecil.'),
-(1, 7, 5, 'Adegan "Avengers Assemble" bikin merinding satu bioskop!'),
-(2, 7, 4, 'Konsep penjelajahan waktunya agak membingungkan, tapi tertutup aksi yang keren.'),
-(3, 7, 5, 'Pemberian konklusi cerita untuk Iron Man dan Captain America yang sangat pas.'),
-(6, 7, 4, 'Durasi 3 jam tidak terasa lama karena tensi ceritanya terjaga.'),
-(7, 7, 5, 'Air mata tumpah pas adegan pengorbanan di Vormir dan akhir film.'),
-(8, 7, 4, 'Pertarungan melawan Thanos kali ini terasa jauh lebih personal.'),
-(10, 7, 5, 'Puncak kejayaan Marvel Studios yang susah ditandingi lagi.'),
-
-(4, 8, 4, 'Awal yang menjanjikan untuk jagat sinema pahlawan super lokal.'), -- FILM 8: Gundala (id_film = 8)
-(10, 8, 3, 'Koreografi laganya keren, tapi transisi ceritanya terasa agak terburu-buru.'),
-(1, 8, 4, 'Suka dengan penggambaran Jakarta yang kumuh dan penuh ketimpangan sosial.'),
-(2, 8, 3, 'Asal-usul Sancaka diceritakan dengan baik, tapi pas jadi Gundala agak kurang porsinya.'),
-(3, 8, 4, 'Efek petirnya sudah lumayan rapi untuk ukuran industri lokal.'),
-(5, 8, 4, 'Abimana aktingnya matang sekali sebagai tokoh utama.'),
-(6, 8, 3, 'Karakter musuhnya terlalu banyak, jadi kurang fokus perkembangannya.'),
-(7, 8, 4, 'Sisi sosiopolitik yang dimasukkan Joko Anwar membuat film ini berbobot.'),
-(8, 8, 4, 'Adegan tarung di pabrik bener-bener intens dan kreatif.'),
-(9, 8, 3, 'Potensinya besar, semoga sekuelnya bisa lebih rapi lagi.'),
-
-(7, 9, 4, 'Komedi yang segar dengan aksi tembak-tembakan yang gak masuk akal tapi seru!'), -- FILM 9: Comic 8 (id_film = 9)
-(1, 9, 4, 'Nonton ini gak usah mikir keras, nikmati aja banyolan para komika.'),
-(2, 9, 3, 'Banyak joke yang lucu, tapi beberapa terasa agak garing.'),
-(3, 9, 4, 'Konsep perampokan bank dengan twist berlapis-lapis yang menghibur.'),
-(4, 9, 4, 'Perpaduan stand up comedy dan aksi yang cukup unik di Indonesia.'),
-(5, 9, 3, 'Pacing-nya terlalu cepat, kadang perpindahan adegannya bikin bingung.'),
-(6, 9, 4, 'Cameo dari artis-artis seniornya lumayan mengejutkan dan menghibur.'),
-(8, 9, 4, 'Gaya penyutradaraan Anggy Umbara yang komikal sangat terasa di sini.'),
-(9, 9, 3, 'Aksinya seru, efek ledakannya lumayan, pas buat hiburan ringan.'),
-(10, 9, 4, 'Salah satu pelopor film komedi aksi modern yang sukses di pasaran.'),
-
-(8, 10, 5, 'Plot twist di akhir film bener-bener membuat saya tercengang dan berpikir keras.'), -- FILM 10: Shutter Island (id_film = 10)
-(1, 10, 5, 'Suasana pulau dan rumah sakit jiwanya bener-bener bikin paranoid.'),
-(2, 10, 4, 'Akting Leonardo DiCaprio pas jadi detektif yang frustrasi keren banget.'),
-(3, 10, 5, 'Setiap petunjuk kecil di awal film baru terasa masuk akal pas nonton kedua kali.'),
-(4, 10, 4, 'Scorsese berhasil mengaduk-aduk psikologis penonton sepanjang film.'),
-(5, 10, 4, 'Sinematografi yang suram mendukung nuansa misteri neor-noir filmnya.'),
-(6, 10, 5, 'Salah satu psikologikal thriller terbaik dengan ending paling membekas.'),
-(7, 10, 4, 'Ketegangan dibangun lewat dialog dan tatapan mata para karakternya.'),
-(9, 10, 4, 'Butuh diskusi panjang sama temen buat paham kebenaran cerita aslinya.'),
-(10, 10, 5, 'Pertanyaan akhir dari Teddy bener-bener menutup film dengan sangat cerdas.');
+(1, 1, 5, 'Film yang sangat mengesankan! Plotnya rumit tapi memuaskan.'),
+(2, 2, 4, 'Bagus, tapi durasinya agak kepanjangan.'),
+(3, 3, 5, 'Sangat cerdas dan penuh kejutan.'),
+(4, 4, 4, 'Animasi yang indah dan menyentuh hati.'),
+(5, 5, 5, 'Horor lokal yang menegangkan, saya merinding.'),
+(6, 6, 4, 'Visual luar biasa, tapi agak rumit secara ilmiah.'),
+(7, 7, 5, 'Epik! Akhir yang memuaskan untuk para penggemar.'),
+(8, 8, 3, 'Cukup bagus, tapi menurut saya biasa saja.'),
+(9, 9, 4, 'Komedi ringan yang menghibur.'),
+(10, 10, 5, 'Plot twist yang mengejutkan!');
 
 -- 19. Watchlist (5 Data)
 INSERT INTO watchlist (id_pengguna, id_film) VALUES
