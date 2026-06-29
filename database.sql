@@ -1,3 +1,6 @@
+CREATE DATABASE Sewa_Film;
+USE Sewa_Film;
+
 --1.Tabel Kategori
 CREATE TABLE kategori (
     id_kategori INT AUTO_INCREMENT PRIMARY KEY,
