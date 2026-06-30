@@ -40,9 +40,9 @@ CREATE TABLE pengguna (
     id_pengguna INT AUTO_INCREMENT PRIMARY KEY,
     nama VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    pw VARCHAR(255) NOT NULL,
     tanggal_daftar DATETIME DEFAULT CURRENT_TIMESTAMP,
-    status_akun VARCHAR(20) DEFAULT 'Aktif'
+    status_akun VARCHAR(20) DEFAULT 'Aktif',
+    role VARCHAR(30) NOT NULL
 );
 
 --7. Tabel Voucher
@@ -254,18 +254,17 @@ INSERT INTO aktor (nama_aktor, negara) VALUES
 ('Tara Basro', 'Indonesia');
 
 -- 9. Pengguna (10 Data)
-INSERT INTO pengguna (nama, email, pw, tanggal_daftar) VALUES
-('Budi Sudarsono', 'budi@gmail.com', '$2y$10$e0MYzXy...', '2026-01-10 08:00:00'),
-('Siti Aminah', 'siti@yahoo.com', '$2y$10$kJS81xL...', '2026-01-15 09:30:00'),
-('Andi Wijaya', 'andi@gmail.com', '$2y$10$mN92kJz...', '2026-02-01 14:15:00'),
-('Dewi Lestari', 'dewi@gmail.com', '$2y$10$pL91mKq...', '2026-02-12 19:45:00'),
-('Rian Hidayat', 'rian@hotmail.com', '$2y$10$qO02nLx...', '2026-03-01 11:00:00'),
-('Eka Putri', 'eka@gmail.com', '$2y$10$rP13oMz...', '2026-03-20 15:22:00'),
-('Feri Setiawan', 'feri@gmail.com', '$2y$10$sQ24pNx...', '2026-04-05 10:10:00'),
-('Gita Gutawa', 'gita@yahoo.com', '$2y$10$tR35qOx...', '2026-04-18 16:40:00'),
-('Hendra Kurnia', 'hendra@gmail.com', '$2y$10$uS46rPx...', '2026-05-02 13:05:00'),
-('Indah Permata', 'indah@gmail.com', '$2y$10$vT57sQx...', '2026-05-25 21:12:00');
-
+INSERT INTO pengguna (nama, email, tanggal_daftar, role) VALUES
+('Budi Sudarsono', 'budi@gmail.com', '2026-01-10 08:00:00', 'admin'),
+('Siti Aminah', 'siti@yahoo.com', '2026-01-15 09:30:00', 'staff'),
+('Andi Wijaya', 'andi@gmail.com', '2026-02-01 14:15:00', 'staff'),
+('Dewi Lestari', 'dewi@gmail.com', '2026-02-12 19:45:00', 'customer'),
+('Rian Hidayat', 'rian@hotmail.com', '2026-03-01 11:00:00', 'customer'),
+('Eka Putri', 'eka@gmail.com', '2026-03-20 15:22:00', 'customer'),
+('Feri Setiawan', 'feri@gmail.com', '2026-04-05 10:10:00', 'customer'),
+('Gita Gutawa', 'gita@yahoo.com', '2026-04-18 16:40:00', 'customer'),
+('Hendra Kurnia', 'hendra@gmail.com', '2026-05-02 13:05:00', 'customer'),
+('Indah Permata', 'indah@gmail.com', '2026-05-25 21:12:00', 'customer');
 
 -- 10. Voucher (3 Data)
 INSERT INTO voucher (kode_voucher, potongan_persen, tanggal_kadaluarsa) VALUES
